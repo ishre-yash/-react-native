@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ManageExpense from './screens/ManageExpense';
 import RecentExpense from './screens/RecentExpense';
-import AllExpense from './screens/AllExpense';
+import AllExpenses from './screens/AllExpenses';
 import { GlobalStyles } from './constant/styles';
 import { Ionicons } from '@expo/vector-icons';
 import IconButton from './components/UI/IconButton';
@@ -70,7 +70,7 @@ function MyTabs() {
           ),
         }}
       />
-      <Tab.Screen name="AllExpense" component={AllExpense}
+      <Tab.Screen name="AllExpense" component={AllExpenses}
         options={{
           title: 'All Expense',
           tabBarLabel: 'All Expense',
